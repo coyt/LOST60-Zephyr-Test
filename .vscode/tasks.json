@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Zephyr Project",
+            "type": "shell",
+            "command": "west build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build and Upload Zephyr Project",
+            "type": "shell",
+            "command": "west build && west flash"
+        },
+        {
+            "label": "Upload Zephyr Project",
+            "type": "shell",
+            "command": "west flash"
+        }
+    ]
+}

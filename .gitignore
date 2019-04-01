@@ -1,7 +1,7 @@
 .vscode/*
 !.vscode/tasks.json
 !.vscode/launch.json
-
+.west/*
 build/*
 
 
