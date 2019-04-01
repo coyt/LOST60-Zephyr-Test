@@ -106,9 +106,7 @@ static void bt_ready(int err) {
 
   // Load the BT configuration settings from flash, old encryption keys, etc.
   // This allows us to maintain connections through power cycles
-  if (IS_ENABLED(CONFIG_SETTINGS)) {
-    settings_load();
-  }
+  settings_load();
 
   // Start the BT device's advertisement with the advertisement data
   err = bt_le_adv_start(BT_LE_ADV_CONN_NAME, ad, ARRAY_SIZE(ad), NULL, 0);
